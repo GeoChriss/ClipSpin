@@ -169,7 +169,7 @@
         <p>ClipSpin does not monitor clipboard activity from other apps in any way beyond reading the standard system pasteboard that macOS makes available to all applications.</p>
 
         <h2>Secure Input Fields</h2>
-        <p>When a secure input field is active (such as a password field in your browser), macOS enables Secure Event Input mode. ClipSpin detects this and will not attempt to simulate keystrokes. Items copied while secure input is active are still added to your clipboard history like any other clipboard content.</p>
+        <p>When a secure input field is active (such as a password field in your browser), macOS enables Secure Event Input mode. ClipSpin detects this and will not attempt to simulate keystrokes. ClipSpin relies on the standard macOS pasteboard APIs. Behaviour in secure input fields is controlled entirely by macOS.</p>
 
         <h2>Data Deletion</h2>
         <p>You have full control over your data at all times:</p>

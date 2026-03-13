@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ClipSpin — Privacy Policy</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            line-height: 1.7;
+            color: #1d1d1f;
+            background: #fafafa;
+            padding: 0 20px;
+        }
+        .container {
+            max-width: 720px;
+            margin: 0 auto;
+            padding: 60px 0 80px;
+        }
+        h1 {
+            font-size: 32px;
+            font-weight: 700;
+            margin-bottom: 8px;
+        }
+        .subtitle {
+            font-size: 14px;
+            color: #86868b;
+            margin-bottom: 48px;
+        }
+        h2 {
+            font-size: 20px;
+            font-weight: 600;
+            margin-top: 40px;
+            margin-bottom: 12px;
+        }
+        p {
+            font-size: 15px;
+            color: #333;
+            margin-bottom: 16px;
+        }
+        ul {
+            margin: 0 0 16px 24px;
+            font-size: 15px;
+            color: #333;
+        }
+        ul li {
+            margin-bottom: 8px;
+        }
+        .highlight {
+            background: #f0f5ff;
+            border-left: 3px solid #0071e3;
+            padding: 16px 20px;
+            border-radius: 0 8px 8px 0;
+            margin: 24px 0;
+        }
+        .highlight p {
+            margin-bottom: 0;
+            font-weight: 500;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 16px 0 24px;
+            font-size: 15px;
+        }
+        th, td {
+            text-align: left;
+            padding: 10px 16px;
+            border-bottom: 1px solid #e5e5e5;
+        }
+        th {
+            font-weight: 600;
+            color: #1d1d1f;
+            background: #f5f5f7;
+        }
+        td {
+            color: #333;
+        }
+        .footer {
+            margin-top: 60px;
+            padding-top: 24px;
+            border-top: 1px solid #e5e5e5;
+            font-size: 13px;
+            color: #86868b;
+        }
+        a {
+            color: #0071e3;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Privacy Policy</h1>
+        <p class="subtitle">ClipSpin for macOS &mdash; Last updated: 13 March 2026</p>
+
+        <div class="highlight">
+            <p>ClipSpin is designed to be completely private. Your data never leaves your Mac. There is no network access, no analytics, no tracking, and no cloud sync.</p>
+        </div>
+
+        <h2>Overview</h2>
+        <p>ClipSpin is a clipboard manager that runs locally on your Mac. It monitors your system clipboard to provide clipboard history, pinning, and snippet features. This privacy policy explains what data ClipSpin accesses, how it is stored, and what it does not do.</p>
+
+        <h2>Data ClipSpin Accesses</h2>
+        <p>ClipSpin reads the contents of your macOS system clipboard in order to provide its core functionality. The types of data it may read from your clipboard include:</p>
+        <ul>
+            <li><strong>Text</strong> &mdash; plain text and URLs you copy</li>
+            <li><strong>Images</strong> &mdash; screenshots and copied images (up to 2 MB)</li>
+            <li><strong>Files and folders</strong> &mdash; file paths and associated icons when you copy items from Finder</li>
+        </ul>
+        <p>ClipSpin also stores snippets you create manually, including any text, email addresses, phone numbers, addresses, URLs, or other information you choose to save.</p>
+
+        <h2>How Your Data Is Stored</h2>
+        <p>All data is stored locally on your Mac in the following location:</p>
+        <p><code>~/Library/Application Support/ClipSpin/</code></p>
+        <p>Data is saved as JSON files on disk. There is no database server, no encryption at rest, and no external storage. The data is accessible only to your macOS user account and to applications with appropriate file system permissions.</p>
+
+        <table>
+            <tr>
+                <th>Data type</th>
+                <th>Storage</th>
+                <th>Retention</th>
+            </tr>
+            <tr>
+                <td>Clipboard history</td>
+                <td>Local JSON file</td>
+                <td>Up to 1,000 items; cleared manually</td>
+            </tr>
+            <tr>
+                <td>Pinned items</td>
+                <td>Local JSON file</td>
+                <td>Up to 5 items; removed manually</td>
+            </tr>
+            <tr>
+                <td>Snippets</td>
+                <td>Local JSON file</td>
+                <td>Unlimited; deleted manually</td>
+            </tr>
+            <tr>
+                <td>Preferences</td>
+                <td>UserDefaults (macOS)</td>
+                <td>Until app is removed</td>
+            </tr>
+        </table>
+
+        <h2>What ClipSpin Does Not Do</h2>
+        <ul>
+            <li><strong>No network access</strong> &mdash; ClipSpin makes zero network requests. It does not connect to the internet for any reason.</li>
+            <li><strong>No analytics or telemetry</strong> &mdash; ClipSpin does not collect usage data, crash reports, or any form of analytics.</li>
+            <li><strong>No cloud sync</strong> &mdash; Your clipboard history and snippets are never uploaded to any server or cloud service.</li>
+            <li><strong>No third-party SDKs</strong> &mdash; ClipSpin does not include any third-party analytics, advertising, or tracking frameworks.</li>
+            <li><strong>No data sharing</strong> &mdash; Your data is never shared with, sold to, or accessible by any third party.</li>
+            <li><strong>No user accounts</strong> &mdash; ClipSpin does not require registration, login, or any form of account creation.</li>
+        </ul>
+
+        <h2>Permissions</h2>
+        <p>ClipSpin requests the following macOS permission:</p>
+        <ul>
+            <li><strong>Accessibility</strong> &mdash; Required to simulate keyboard events (Cmd+V) for the auto-paste feature. This permission is managed through macOS System Settings under Privacy &amp; Security &rarr; Accessibility. You can revoke it at any time.</li>
+        </ul>
+        <p>ClipSpin does not request access to your contacts, location, camera, microphone, or any other sensitive system resource.</p>
+
+        <h2>Clipboard Monitoring</h2>
+        <p>ClipSpin periodically checks the system clipboard (NSPasteboard) for changes. When a change is detected, the new content is saved to your local clipboard history. This monitoring runs only while ClipSpin is active in the menu bar. Quitting ClipSpin stops all clipboard monitoring immediately.</p>
+        <p>ClipSpin does not monitor clipboard activity from other apps in any way beyond reading the standard system pasteboard that macOS makes available to all applications.</p>
+
+        <h2>Secure Input Fields</h2>
+        <p>When a secure input field is active (such as a password field in your browser), macOS enables Secure Event Input mode. ClipSpin detects this and will not attempt to simulate keystrokes. Items copied while secure input is active are still added to your clipboard history like any other clipboard content.</p>
+
+        <h2>Data Deletion</h2>
+        <p>You have full control over your data at all times:</p>
+        <ul>
+            <li><strong>Clear history</strong> &mdash; Use the Clear button in Settings to delete all clipboard history.</li>
+            <li><strong>Delete individual items</strong> &mdash; Right-click any item and choose Delete.</li>
+            <li><strong>Delete snippets</strong> &mdash; Right-click any snippet and choose Delete.</li>
+            <li><strong>Complete removal</strong> &mdash; Uninstalling ClipSpin and deleting the folder at <code>~/Library/Application Support/ClipSpin/</code> removes all stored data permanently.</li>
+        </ul>
+
+        <h2>Children's Privacy</h2>
+        <p>ClipSpin does not knowingly collect any personal information from children. The app does not collect personal information from any user, regardless of age.</p>
+
+        <h2>Changes to This Policy</h2>
+        <p>If this privacy policy is updated, the changes will be reflected on this page with an updated revision date. Since ClipSpin has no network access, it cannot notify you of policy changes within the app.</p>
+
+        <h2>Contact</h2>
+        <p>If you have any questions about this privacy policy or ClipSpin's data practices, you can reach out through:</p>
+        <ul>
+            <li>GitHub Issues: <a href="https://github.com/GeoChriss/ClipSpin/issues">github.com/GeoChriss/ClipSpin/issues</a></li>
+        </ul>
+
+        <div class="footer">
+            <p>&copy; 2026 George Christodoulou. All rights reserved.</p>
+            <p>ClipSpin is a product of George Christodoulou. This privacy policy applies to the ClipSpin application for macOS distributed through the Mac App Store.</p>
+        </div>
+    </div>
+</body>
+</html>
